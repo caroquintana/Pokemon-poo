@@ -16,6 +16,11 @@
 			this.atacar = function(pokemon){
 				pokemon.vida = pokemon.vida - this.poderDeAtaque;
 			}
+			mostrar()
+			{
+				document.write(this.nombre + " atacó a " + this.nombre + " y " + this.nombre + " tiene " + this.vida + " restantes ");
+		
+			}
 		}
 
 
@@ -24,4 +29,4 @@
 
 			pikachu.atacar(charmander);
 
-			console.log(charmander.vida);
+			return(charmander.vida);

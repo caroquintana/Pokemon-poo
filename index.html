@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style type="text/css">
 		body{
 		background-color: #FF5D46;
 		text-align: center;
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Lato', sans-serif;
 		color: #FFFFFF;
 		line-height: 23px;
 		margin-top: 100px;
@@ -18,16 +18,26 @@
 <body>
 	<h2>Batalla Pokemón</h2>
 	<div>
-	<label for="op">Escoge tu Pokemón:</label><br>
-	<select name"opcion1" required></>
+	<label for="op1">Escoge tu 1er Pokemón:</label><br>
+	<select name"pokemon1" required></>
+		<option value="">Escoge un Pokemon</option>
+		<option value="pikachu">Pikachu</option>
+		<option value="charmander">Charmander</option>
+
+	</select></br>
+
+	<label for="op2">Escoge tu 2do Pokemón:</label><br>
+	<select name"pokemon2" required></>
 		<option value="">Escoge un Pokemon</option>
 		<option value="pikachu">Pikachu</option>
 		<option value="charmander">Charmander</option>
 
 	</select>
 
-	<div id ="opcion2">
-		<input type="submit" name="" value="PELEAR">
+	<div id ="boton">
+
+		<input type="pelear" name="pelear" id="titulousuario">   
+		<button onclick="Pokemon(); return false">PELEAR</button><br> 
 
 	</div>
 </div>
