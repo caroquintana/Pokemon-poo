@@ -1,32 +1,28 @@
-		function Pokemon(nombre, color, poderDeAtaque){
-			this.nombre = nombre;
-			this.color = color;
-			this.nivelDeAmistad = 0;
-			this.vida = 100;
-			this.poderDeAtaque = poderDeAtaque;
+function Pokemon(nombre, color, poderDeAtaque){
+	this.nombre = nombre;
+	this.color = color;
+	this.poderDeAtaque = poderDeAtaque;			
+	this.nivelDeAmistad = 0;
+	this.vida = 100;
 
-			this.mostrarPokemon = function(){
-				return("Hola, soy: " + this.nombre + " y soy de color: " + this.color)
-			}
+	this.mostrarPokemon = function(){
+		return("Hola, soy: " + this.nombre + " y soy de color: " + this.color)
+	}
 
-			this.aumentarAmistad = function(valor){
-				this.nivelDeAmistad = this.nivelDeAmistad + valor;
-			}
+	this.aumentarAmistad = function(valor){
+		this.nivelDeAmistad = this.nivelDeAmistad + valor;
+	}
 
-			this.atacar = function(pokemon){
-				pokemon.vida = pokemon.vida - this.poderDeAtaque;
-			}
-			mostrar()
-			{
-				document.write(this.nombre + " atacó a " + this.nombre + " y " + this.nombre + " tiene " + this.vida + " restantes ");
-		
-			}
-		}
+	this.atacar = function(pokemon){
+		pokemon.vida = pokemon.vida - this.poderDeAtaque;
+	}
+
+}
 
 
-			var pikachu = new Pokemon("Pikachu", "amarillo", 100);
-			var charmander = new Pokemon("Charmander", "rojo", 20);
+const Pikachu = new Pokemon("Pikachu", "amarillo", 100)
+const Charmander = new Pokemon("Charmander", "rojo", 20)
 
-			pikachu.atacar(charmander);
+Pikachu.atacar(Charmander);
 
-			return(charmander.vida);
+console.log(Charmander.vida);
